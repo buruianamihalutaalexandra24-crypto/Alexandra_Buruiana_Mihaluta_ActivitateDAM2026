@@ -33,7 +33,6 @@ public class AddActivity extends AppCompatActivity {
     }
 
     public void salveazaBar(View view) {
-        // 1. Găsim view-urile după id
         EditText numeEt = findViewById(R.id.nume_et);
         Spinner orasSpinner = findViewById(R.id.oras_spinner);
         RadioGroup tipRg = findViewById(R.id.tip_rg);
@@ -42,7 +41,6 @@ public class AddActivity extends AppCompatActivity {
         RatingBar ratingRb = findViewById(R.id.rating_rb);
         EditText pretEt = findViewById(R.id.pret_et);
 
-        // 2. Citim valorile
         String nume = numeEt.getText().toString();
         String oras = orasSpinner.getSelectedItem().toString();
         RadioButton tipSelectat = findViewById(tipRg.getCheckedRadioButtonId());
@@ -55,13 +53,10 @@ public class AddActivity extends AppCompatActivity {
         try {
             pret = Integer.parseInt(pretEt.getText().toString());
         } catch (NumberFormatException e) {
-            // câmp gol sau nenumeric: rămâne 0
         }
 
-        // 3. Creăm obiectul
         Bar bar = new Bar(nume, oras, tip, areTerasa, nonStop, rating, pret);
 
-        // 4. Îl punem într-un Bundle și îl trimitem înapoi
         Bundle bundle = new Bundle();
         bundle.putSerializable("bar", bar);
 
