@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AEMINAR_06_10</string>
+    <string name="adauga_bar">Adaugă bar</string>
+    <string name="titlu_adaugare">Adaugă un bar</string>
+    <string name="eticheta_nume">Numele barului</string>
+    <string name="hint_nume">ex: Bar Central</string>
+    <string name="eticheta_oras">Oraș</string>
+    <string name="eticheta_tip">Tip</string>
+    <string name="tip_cafenea">Cafenea</string>
+    <string name="tip_pub">Pub</string>
+    <string name="tip_club">Club</string>
+    <string name="are_terasa">Are terasă</string>
+    <string name="non_stop">Deschis non-stop</string>
+    <string name="eticheta_rating">Rating</string>
+    <string name="eticheta_pret">Preț mediu (lei)</string>
+    <string name="hint_pret">ex: 25</string>
+    <string name="salveaza">Salvează</string>
+
+    <string-array name="orase">
+        <item>București</item>
+        <item>Cluj-Napoca</item>
+        <item>Iași</item>
+        <item>Timișoara</item>
+        <item>Brașov</item>
+    </string-array>
+    <string name="vezi_lista">Vezi lista</string>
+    <string name="salveaza_modificari">Salvează modificările</string>
+    <string name="vezi_imagini">Vezi imagini</string>
+</resources>
+
